@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Carlos Instalador – Segurança Eletrônica RJ</title>
   <style>
     body {
@@ -17,7 +17,20 @@
       background-color: #1f4e79;
       color: #fff;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      /* para texto ao lado da logo */
+    }
+    header img {
+      height: 60px; /* ajuste o tamanho conforme desejar */
+      border-radius: 8px; /* opcional, arredonda a logo */
+    }
+    header .header-text {
+      /* mantém o texto alinhado à esquerda */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .container {
       padding: 20px;
@@ -64,23 +77,27 @@
 <body>
 
 <header>
-  <h1>Carlos Instalador</h1>
-  <p>Especialista em Segurança Eletrônica no Rio de Janeiro</p>
-  <p>Atendemos: Zona Oeste, Zona Norte e Zona Sul</p>
+  <img src="logo.png" alt="Logo Carlos Instalador" />
+  <div class="header-text">
+    <h1>Carlos Instalador</h1>
+    <p>Especialista em Segurança Eletrônica</p>
+    <p>Atendemos todo o Rio de Janeiro</p>
+  </div>
 </header>
 
 <div class="container">
   <h2>Proteja seu Patrimônio com Segurança Profissional</h2>
-  <p>Sistemas modernos, atendimento ágil e instalação confiável.</p>
+  <p>Sistemas modernos, atendimento ágil e instalação eficiente.</p>
 
   <h2>Serviços</h2>
   <ul>
     <li>Instalação de Câmeras de Segurança (CFTV)</li>
     <li>Vídeo Porteiro e Interfone</li>
-    <li>Alarme Monitorado</li>
+    <li>Alarme</li>
+    <li>Vídeo Porteiro</li>
     <li>Portão Automático</li>
-    <li>Controle de Acesso</li>
-    <li>Cerca Elétrica e Cancela</li>
+    <li>Controle de Acesso (TAG)</li>
+    <li>Cerca Elétrica e Cancela Eletrônica</li>
     <li>Automação Residencial (Casa Inteligente)</li>
   </ul>
 
