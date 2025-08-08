@@ -94,6 +94,38 @@
       height: 26px;
     }
 
+    /* Estilo para a seção de depoimentos */
+    .depoimentos {
+      background-color: #f0f4f8; /* cinza azulado claro */
+      padding: 40px 20px;
+      margin: 40px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    .depoimentos h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #1f4e79; /* azul do topo */
+    }
+    .depoimento {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-left: 4px solid #1f4e79;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+    .depoimento p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .depoimento strong {
+      color: #1f4e79;
+    }
+
     @media (max-width: 480px) {
       header {
         flex-direction: column;
@@ -153,10 +185,24 @@
     <li>Garantia e suporte técnico</li>
   </ul>
 
-  <h2>Depoimentos</h2>
-  <p>“Serviço excelente. Muito educado, rápido e deixou tudo funcionando perfeitamente. Recomendo!” – Vanessa, Recreio</p>
-  <p>“Contratei para minha loja. Trabalho limpo e de confiança!” – Rafael, Barra</p>
-  <p>“Carlos é um instalador excepcional. Ele domina as melhores práticas!! A precisão e a atenção aos detalhes que ele aplica são impressionantes, sempre garantindo que o trabalho final seja de alta qualidade.” – Ecio Henrique, Campo Grande</p>
+  <section class="depoimentos">
+    <h2>Depoimentos</h2>
+
+    <div class="depoimento">
+      <p>“Serviço excelente. Muito educado, rápido e deixou tudo funcionando perfeitamente. Recomendo!”</p>
+      <strong>– Vanessa, Recreio</strong>
+    </div>
+
+    <div class="depoimento">
+      <p>“Contratei para minha loja. Trabalho limpo e de confiança!”</p>
+      <strong>– Rafael, Barra</strong>
+    </div>
+
+    <div class="depoimento">
+      <p>“Carlos é um instalador excepcional. Ele domina as melhores práticas!! A precisão e a atenção aos detalhes que ele aplica são impressionantes, sempre garantindo que o trabalho final seja de alta qualidade.”</p>
+      <strong>– Ecio Henrique, Campo Grande</strong>
+    </div>
+  </section>
 
   <div class="cta">
     <h2>Solicite agora seu orçamento gratuito!</h2>
